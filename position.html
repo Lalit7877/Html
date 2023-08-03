@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        
+
+        body{
+            background-color: yellow;
+            height: 10000px;
+        }
+        .box{
+            color: white;
+                height: 400px;
+                width: 24%;
+                background-color: black;
+                font-size: 80px;
+                border:  2px black;
+          display: inline-block;  
+          text-align: center;
+        margin: 5px;}
+        #box-2{
+            position: sticky;
+            top: 0px;
+        }
+        #box-4{
+            position: fixed;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+     <div class="box"><h1>1</h1></div>
+     <div class="box" id="box-2"><h1>2</h1></div>
+     <div class="box"><h1>3</h1></div>
+     <div class="box" id="box-4"><h1>4</h1></div>
+</body>
+</html>
