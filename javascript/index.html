@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
 </head>
-<body>
+<body id="b">
+    <button id="btn">clickme</button>
+    <button id="r">red</button>
+    <button id="g">green</button>
     <script>
         /*console.log("welcome in java script")
         alert("hello world")
@@ -17,16 +20,120 @@
          x =10
         console.log(x)
         const pi =3.14
-        console.log(pi)*/
+        console.log(pi)
+        hello(2)
         function hello(i){
             if(i==2)
         {
             var a ="lalit"
             console.log(a)
         }
+        
+      
+        
+        
+           document.getelementbyid("btn").onclick = function () {
+             document.getelementbyid("h").innerhtml = "welcome in java script" ;
+           }
+          document.getelementbyid("r").onclick = function () {
+            document.getelementbyid("h").style.color = "red";
+           }
+           document.getelementbyid("g").onclick = function () {
+            document.getelementbyid("h").style.color = "green";
+           }
+           document.getelementbyid("d").onclick = function () {
+            document.grtelementbyid("h2").innerhtml = new date();
+           }
+           var a=10
+           var b=2
+           console.log(a+b)
+           console.log(a-b)
+           console.log(a*b)
+           console.log(a/b)
+           console.log(10>50)
+           console.log(40<=50)
+           console.log(5=='5')
+           console.log(10!=5)
+           console.log('a'>'b')
+           console.log('A'<'b')
+           console.log(10>5 && 4>10)
+           console.log(7>4 || 4>10)
+        
+        let age =prompt("Enter your age :")
+        if(age>18){
+            console.log("ki bhai tu vote de skta hain ")
         }
-        hello(2)
-    </script>
-    
+        else if(age>=10 && age<18)
+        {
+            console.log("half vote")
+        }
+        else{
+            console.log("ki bhai tu vote nhi de skta")
+        }
+        let a=prompt("enter value a")
+        let b=prompt("enter value b")
+
+        if(a>b)
+        {
+            console.log(a)
+        }
+        else
+        {
+            console.log(b)
+        }
+        let a=Number(prompt("enter value a"))
+        let b=Number(prompt("enter value b"))
+        let c=Number(prompt("enter value c"))
+        if(a>=b){
+            if(a=>c){
+                console.log(a)
+            }
+            else
+            {
+                console.log(c)
+            }
+        }
+        else{
+        if(b>=c){
+            console.log(b)
+        }
+            
+                else
+                {
+                    console.log(c)
+                }
+            
+        }*/
+        /*let a=Number(prompt("Enter number"))
+        switch(a){
+            case(1):console.log("Monday")
+            break;
+            case(2):console.log("Tuesday")
+            break;
+            case(3):console.log("Wednesday")
+            break;
+            case(4):console.log("Thrusday")
+            break;
+            case(5):console.log("Friday")
+            break;
+            case(6):console.log("Saturday")
+            break;
+            case(7):console.log("Sunday")
+            break;
+        }*/
+        /*let a=Number(prompt("Enter number"))
+        if(a%2==0)
+            console.log("Even number",a)}
+            else{
+            console.log("Enter odd",b)}*/
+            /*let a=Number(prompt("Enter number"))
+            if(a<0){
+                console.log("negative",a)
+            }
+            else{
+            console.log("positive",a)}*/
+            
+            
+        </script>
 </body>
 </html>
